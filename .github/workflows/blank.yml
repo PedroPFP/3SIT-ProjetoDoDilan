@@ -32,7 +32,7 @@ jobs:
       - name: Verify existence of folders
         run: |
           DIR="/documentacaoProjeto"
-          if [ id $DIR ] 
+          if [ -d $DIR ] 
             then
               echo Folder Exists.
                 fi
