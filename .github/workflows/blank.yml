@@ -31,10 +31,15 @@ jobs:
         
       - name: Verify existence of folders
         run: |
-          DIR="./documentacaoProjeto"
-          if [-d "$DIR"]; then
-            echo "A pasta existe no projeto"
-          fi
+          
+          if [ $1 -gt 100 ] 
+            then
+              echo Hey that\'s a large number.
+                if (( $1 % 2 == 0 ))
+                  then
+                    echo And is also an even number.
+                  fi
+                fi
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
