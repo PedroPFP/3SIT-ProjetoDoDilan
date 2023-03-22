@@ -31,11 +31,11 @@ jobs:
         
       - name: Verify existence of folders
         run: |
-          variable = "10"
-          if [ $variable -gt 100 ] 
+          VBR="10"
+          if [ $VBR -gt 100 ] 
             then
               echo Hey that\'s a large number.
-                if (( $variable % 2 == 0 ))
+                if (( $VBR % 2 == 0 ))
                   then
                     echo And is also an even number.
                   fi
