@@ -31,14 +31,10 @@ jobs:
         
       - name: Verify existence of folders
         run: |
-          VBR="10"
-          if [ $VBR -gt 100 ] 
+          DIR="/documentacaoProjeto"
+          if [ id $DIR ] 
             then
-              echo Hey that\'s a large number.
-                if (( $VBR % 2 == 0 ))
-                  then
-                    echo And is also an even number.
-                  fi
+              echo Folder Exists.
                 fi
 
       # Runs a set of commands using the runners shell
